@@ -8,7 +8,7 @@ class Car:
     def brake(self):
         self.speed -= 10
     def get_speed(self):
-        print(self.speed)
+        return self.speed
 
     
 my_car = Car("소나타","빨간색")
@@ -19,4 +19,5 @@ my_car.accelerate()
 my_car.accelerate()
 my_car.accelerate()
 my_car.brake()
-my_car.get_speed()
+my_speed = my_car.get_speed()
+print(my_speed)
